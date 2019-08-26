@@ -1,0 +1,643 @@
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/Location
+<http://purl.org/dc/terms/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+# 
+# http://xmlns.com/foaf/0.1/family_name
+<http://xmlns.com/foaf/0.1/family_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/family_name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<http://xmlns.com/foaf/0.1/family_name> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/age> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<http://xmlns.com/foaf/0.1/age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe> <http://www.w3.org/2000/01/rdf-schema#comment> "Axe is a kind of weapon favoured by the Dwarves and few Elves."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe> <http://www.w3.org/2000/01/rdf-schema#label> "Axe"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> <http://www.w3.org/2000/01/rdf-schema#comment> "Bow is a long-range weapon usually, but not exclusively, made of wood that shoots arrows."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> <http://www.w3.org/2000/01/rdf-schema#label> "Bow"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Fictional characters, divided into various races, created by J. R.R. Tolkien."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/page/Character"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the races of fictional characters populating Middle Earth."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf> <http://www.w3.org/2000/01/rdf-schema#label> "Dwarf"@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/page/Dwarf_(Middle-earth)"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the races of fictional characters populating Middle Earth."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> <http://www.w3.org/2000/01/rdf-schema#label> "Elf"@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/page/Elf_(Middle-earth)"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> <http://www.w3.org/2000/01/rdf-schema#comment> "The least common of Hobbits."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> <http://www.w3.org/2000/01/rdf-schema#label> "Fallohide"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> <http://www.w3.org/2000/01/rdf-schema#comment> "The most common type of Hobbit."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> <http://www.w3.org/2000/01/rdf-schema#label> "Harfoot"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the races of fictional characters populating Middle Earth."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> <http://www.w3.org/2000/01/rdf-schema#label> "Hobbit"@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/page/Hobbit"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the races of fictional characters populating Middle Earth."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human> <http://www.w3.org/2000/01/rdf-schema#label> "Human"@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/page/Man_(Middle-earth)"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Many different languages are spoken by the characters living in Middle-Earth."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> <http://www.w3.org/2000/01/rdf-schema#label> "Language"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the races of fictional characters populating Middle Earth."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> <http://www.w3.org/2000/01/rdf-schema#label> "Maiar"@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://dbpedia.org/page/Maia_(Middle-earth)"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> <http://www.w3.org/2000/01/rdf-schema#comment> "Names, in Tolkien's universe, are very important. As a matter of fact, the writer carefully thought about the meaning and the etimology of the names he created."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass of Elf. Noldor are High Elves of the Second Clan who migrated to Valinor and lived in Eldamar."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> <http://www.w3.org/2000/01/rdf-schema#label> "Noldor"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "In Tolkien's universe, many places are created and taken into consideration."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> <http://www.w3.org/2000/01/rdf-schema#comment> "In Middle-Earth, rings are artefacts which possess magical powers."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> <http://www.w3.org/2000/01/rdf-schema#label> "Ring"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of Hobbit who lived in swampy areas."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> <http://www.w3.org/2000/01/rdf-schema#label> "Stoor"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/2000/01/rdf-schema#comment> "In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/2000/01/rdf-schema#label> "Sword"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> <http://www.w3.org/2000/01/rdf-schema#comment> "Sublcass of Elf. Teleri were the third of the Elf clans who came to Aman."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> <http://www.w3.org/2000/01/rdf-schema#label> "Teleri"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> <http://www.w3.org/2000/01/rdf-schema#comment> "Subclass of Elf. They are the fairest and most noble of the High Elves."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> <http://www.w3.org/2000/01/rdf-schema#label> "Vanyar"@en .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters are provided with a weapon which they use to perform actions."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Weapon"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "gardā (Primitive Quendian)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Arda" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "bounded or defined place, region" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Bagging (Northern English)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Baggins" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "eating between meals, the end of a bag" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://purl.org/dc/terms/Location> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://xmlns.com/foaf/0.1/family_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#None> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> "22 September T.A. 2890" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> "Unknown" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "bil + bó/bá (Anglosaxon)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Bilbo" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "cut-and-thrust sword" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Black Speech" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Fallow (Anglosaxon)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Fallohide" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Pale, yellowish." .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <http://purl.org/dc/terms/Location> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <http://xmlns.com/foaf/0.1/family_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <http://xmlns.com/foaf/0.1/member> "The Fellowship of the Ring" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> "22 September, T.A. 2968" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> "Unknown" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Frod (Anglosaxon)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Frodo" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Wise by experience" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Gamgee (Contemporary English)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Gamgee" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Cotton wool" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <http://purl.org/dc/terms/Location> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Unknown> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <http://xmlns.com/foaf/0.1/member> "The Fellowship of the Ring" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> "Unknown" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> "Unknown" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "gandr + álfr (Old Norse)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Gandalf" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Wand elf" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "glam + dring (Westron)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Glamdring" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "foe-hammer" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "hǣr-fōt (Anglosaxon)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Harfoot" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "One with hairy feet." .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "mor + dôr (Sindarin)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Mordor" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "The Black Land" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Fiery red" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "narwa + ya (Quenya)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Narya" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Noldo (Quenya)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Noldor" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Knowledge, wisdom, lore" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#None
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#None> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <http://purl.org/dc/terms/Location> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <http://xmlns.com/foaf/0.1/family_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <http://xmlns.com/foaf/0.1/member> "The Fellowship of the Ring" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> "6 April T.A. 2980" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> "Unknown" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "samwís (Anglosaxon)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Samwise" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Simple minded" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <http://purl.org/dc/terms/Location> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth> "Unknown" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath> "25 March T.A. 3019" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "saura (Sindarin)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Sauron" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Foul, putrid, evil-smelling" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Sindar (Quenya)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Sindarin" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Grey Elivsh language" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Staff" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "stincg, steng (Anglosaxon)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Sting" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Act of stinging, puncture, thrust" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Stor (Anglosaxon)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Stoor" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Large, strong" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Teler (Quenya)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Teleri" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Last" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "The One Ring" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "scira (Old High German)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "The Shire" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "District, province, country" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Unknown
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Bányâ (Primitive Elvish)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Vanyar" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Fair" .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> .
+# 
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology> "Adûnaic Adûn (Númenórean)" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs> "Westron" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means> "Language of the West" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#comment> "A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank."@en .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
