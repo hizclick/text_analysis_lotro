@@ -1,5 +1,18 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks"
+  } ]
+}, {
+  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -22,6 +35,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/age",
@@ -48,7 +70,7 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/name",
@@ -81,22 +103,85 @@
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place" ],
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Andúril was the name for the sword Narsil after its reforging in Third Age 3018 for Aragorn, the heir of Isildur."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name"
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril_name"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
-    "@value" : "gardā (Primitive Quendian)"
+    "@value" : "andúnë + ril (Quenya)"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Arda"
+    "@value" : "Andúril"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
-    "@value" : "bounded or defined place, region"
+    "@value" : "Flame of the West"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://dbpedia.org/page/Aragorn"
+  } ],
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@value" : "The Fellowship of the Ring"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth" : [ {
+    "@value" : "1 March T.A. 2931"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath" : [ {
+    "@value" : "Fo.A. 120"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Aran + gorn (Sindarin)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Aragorn"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Revered King"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe",
@@ -138,7 +223,7 @@
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name"
   } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt" : [ {
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth" : [ {
@@ -146,9 +231,6 @@
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath" : [ {
     "@value" : "Unknown"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#None"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
@@ -182,15 +264,71 @@
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech_name"
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Black Speech was created by Sauron during the Dark Years to be the sole language of all the servants of Mordor, replacing the many different varieties of Orkish and other languages used by his servants."
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human" ],
+  "http://purl.org/dc/terms/Location" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor"
+  } ],
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@value" : "The Fellowship of the Ring"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth" : [ {
+    "@value" : "T.A. 2978"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath" : [ {
+    "@value" : "February 26, T.A. 3019"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Bôr + Mírë (Sindarin + Quenya)"
+  } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Black Speech"
+    "@value" : "Boromir"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Trusty man + precious thing"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow",
@@ -210,6 +348,30 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"
   } ]
 }, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is a long-range weapon usually, but not exclusively, made of wood that shoots arrows."
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Brandagamba (Westron)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Brandybuck"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Border-water + male deer or ram"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Broad_bladed_axe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A broadaxe is a large-(broad) headed axe."
+  } ]
+}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -226,6 +388,12 @@
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@language" : "en",
     "@value" : "http://dbpedia.org/page/Character"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Daggers of Westernesse were weapons that Tom Bombadil brought out of the mound in which Frodo Baggins and his friends had been imprisoned. Each dagger had a long, leaf-shaped blade, damasked with serpent-forms in red and gold. They had black sheaths of an unknown metal, light and strong, adorned with fiery stones."
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf",
@@ -270,6 +438,30 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
   } ]
 }, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Erebor was a mountain in the north-east of Rhovanion. It was the source of the river Running, and a major Dwarven stronghold, the Kingdom under the Mountain at the end of the Third Age and well into the Fourth."
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Ereb + or(od) (Sindarin)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Erebor"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Lonely Mountain"
+  } ]
+}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -287,22 +479,14 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
-    "@value" : "Fallow (Anglosaxon)"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Fallohide"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
-    "@value" : "Pale, yellowish."
-  } ]
-}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide" ],
   "http://purl.org/dc/terms/Location" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://dbpedia.org/page/Frodo_Baggins"
   } ],
   "http://xmlns.com/foaf/0.1/family_name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name"
@@ -326,14 +510,28 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
   }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
@@ -370,8 +568,9 @@
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar" ],
-  "http://purl.org/dc/terms/Location" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Unknown"
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://dbpedia.org/page/Gandalf"
   } ],
   "http://xmlns.com/foaf/0.1/member" : [ {
     "@value" : "The Fellowship of the Ring"
@@ -389,9 +588,21 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
   }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
   } ],
@@ -400,9 +611,13 @@
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya"
   }, {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya"
+  }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"
@@ -420,8 +635,61 @@
     "@value" : "Wand elf"
   } ]
 }, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf" ],
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@value" : "The Fellowship of the Ring"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth" : [ {
+    "@value" : "T.A. 2879"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Broad_bladed_axe"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Gimm (Old Norse)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Gimli"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Fire"
+  } ]
+}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Glamdring was a sword, said to have belonged to Turgon, but best known as the weapon of Gandalf during the War of the Ring. It was known in Westron as the Foe-hammer, and Orcs knew it as Beater."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name"
   } ]
@@ -436,6 +704,30 @@
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
     "@value" : "foe-hammer"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Gondor was the South Kingdom of the Númenóreans in Middle-earth, established soon after the downfall of Númenor by Isildur and his brother Anárion."
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "gond + (n)dor (Sindarin)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Gondor"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Stone-land"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot",
@@ -453,18 +745,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"
-  } ]
-}, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
-    "@value" : "hǣr-fōt (Anglosaxon)"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Harfoot"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
-    "@value" : "One with hairy feet."
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit",
@@ -509,6 +789,35 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
   } ]
 }, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Khuzdul, or Dwarvish, was the secret language of the Dwarves."
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Khuzd (Khuzdul)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Khuzdul"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Dwarves"
+  } ]
+}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -521,6 +830,60 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Language"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri" ],
+  "http://purl.org/dc/terms/Location" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm"
+  } ],
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@value" : "The Fellowship of the Ring"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Laeg + golas (Sindarin)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Legolas"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Green foliage"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar",
@@ -544,14 +907,84 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
   } ]
 }, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide" ],
+  "http://purl.org/dc/terms/Location" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"
+  } ],
+  "http://xmlns.com/foaf/0.1/family_name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name"
+  } ],
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@value" : "The Fellowship of the Ring"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth" : [ {
+    "@value" : "Early S.R. 1382"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath" : [ {
+    "@value" : "After S.R. 1484"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#cousinOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Mawr + Udd (Welsh)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Meriadoc"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Great Lord"
+  } ]
+}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mordor was a land in the south-east of the Westlands east of Gondor. During most of the Second and Third Ages it was ruled by Sauron and it was his dwelling and base from which he attempted to conquer Middle-earth.\nMordor was surrounded by three enormous mountain ridges from the North, from the West and from the South, protecting it from an unexpected invasion by any of the Free peoples."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
     "@value" : "mor + dôr (Sindarin)"
   } ],
@@ -578,6 +1011,9 @@
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Narya was one of the Rings of Power, specifically one of the \"Three Rings for the Elven Kings under the sky\"."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name"
   } ]
@@ -610,20 +1046,69 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
-    "@value" : "Noldo (Quenya)"
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide" ],
+  "http://purl.org/dc/terms/Location" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"
   } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Noldor"
+  "http://xmlns.com/foaf/0.1/family_name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Took_name"
   } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
-    "@value" : "Knowledge, wisdom, lore"
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@value" : "The Fellowship of the Ring"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth" : [ {
+    "@value" : "Spring T.A. 2990"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath" : [ {
+    "@value" : "After Fo.A. 63"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#cousinOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#None",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Pelegrinus (Latin)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Peregrin"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Wanderer"
+  } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -637,6 +1122,37 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Place"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Quenya was one of the languages spoken by the Elves. It was the tongue that developed among those non-Telerin Elves who reached Aman (the High Elves) from an earlier language called Common Eldarin."
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Kwene (primitive Quendian)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Quenya"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Person"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring",
@@ -661,6 +1177,10 @@
   "http://purl.org/dc/terms/Location" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"
   } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://dbpedia.org/page/Samwise_Gamgee"
+  } ],
   "http://xmlns.com/foaf/0.1/family_name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name"
   } ],
@@ -680,11 +1200,23 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting"
@@ -720,9 +1252,21 @@
     "@value" : "25 March T.A. 3019"
   } ],
   "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"
+  }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
   } ],
@@ -747,6 +1291,9 @@
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sindarin was the Elvish language most commonly spoken in Middle-earth in the Third Age."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name"
   } ],
@@ -754,9 +1301,6 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
   }, {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Arda"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name",
@@ -772,33 +1316,16 @@
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Staff"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"
-  } ]
-}, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Staff"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sting was an Elvish knife that was probably made in Gondolin in the First Age. Its maker and original bearer are unknown."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name"
   } ]
@@ -832,20 +1359,8 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
-    "@value" : "Stor (Anglosaxon)"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Stoor"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
-    "@value" : "Large, strong"
-  } ]
-}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them."
@@ -878,34 +1393,30 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
-    "@value" : "Teler (Quenya)"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Teleri"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
-    "@value" : "Last"
-  } ]
-}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring" ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring_name"
-  } ]
-}, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "The One Ring"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The One Ring was an ancient artefact created by the Dark Lord Sauron in the Second Age for the purpose of ruling over the Free peoples of Middle-earth, mainly the Elves."
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Shire was a region in Eriador inhabited by Hobbits."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"
+  }, {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name",
@@ -920,8 +1431,17 @@
     "@value" : "District, province, country"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Unknown",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Took_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name" ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
+    "@value" : "Tûk (Westron)"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
+    "@value" : "Took"
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
+    "@value" : "Daring"
+  } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -940,18 +1460,6 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology" : [ {
-    "@value" : "Bányâ (Primitive Elvish)"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs" : [ {
-    "@value" : "Vanyar"
-  } ],
-  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means" : [ {
-    "@value" : "Fair"
-  } ]
-}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -968,6 +1476,9 @@
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Westron was the language of the Dúnedain of Middle-earth. By the end of the Third Age it was more or less a universal language spoken throughout the Westlands."
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name"
   } ],
@@ -996,7 +1507,33 @@
     "@value" : "Language of the West"
   } ]
 }, {
-  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt",
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Staff"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Woodland Realm was a kingdom of Silvan Elves in Mirkwood, from the Second Age onwards."
+  } ],
+  "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
@@ -1023,7 +1560,7 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath",
@@ -1032,7 +1569,16 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#cousinOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf",
@@ -1059,7 +1605,7 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon",
@@ -1071,13 +1617,22 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"
   } ]
 }, {
+  "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
+  } ]
+}, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means",
@@ -1086,7 +1641,7 @@
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf",
@@ -1096,6 +1651,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf"
   } ]
 }, {
   "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks",
@@ -1105,6 +1663,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"
+  }, {
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy"
