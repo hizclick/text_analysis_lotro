@@ -21,22 +21,16 @@
 # http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot> .
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor> .
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar> .
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
 # 
-# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> .
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+# https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
 # 
 # https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -268,6 +262,9 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/Lotro/lotro
 # https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#comment> "Usually used by the Maiars accompained by a sword" .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff" .
 # 
 # https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -364,7 +361,7 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/Lotro/lotro
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://purl.org/dc/terms/Location> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://xmlns.com/foaf/0.1/family_name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name> .
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
+<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise> .
@@ -419,7 +416,6 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/Lotro/lotro
 # https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_L\u00F3rien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_L\u00F3rien> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> .
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_L\u00F3rien> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a long-range weapon usually, but not exclusively, made of wood that shoots arrows." .
 # 
 # https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -864,7 +860,6 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/Lotro/lotro
 # https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> .
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> <http://xmlns.com/foaf/0.1/name> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> <http://www.w3.org/2000/01/rdf-schema#comment> "A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank."@en .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff"@en .
@@ -885,7 +880,6 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/Lotro/lotro
 # 
 # 
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/2000/01/rdf-schema#comment> "In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them."@en .
-<https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> .
 <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> <http://www.w3.org/2000/01/rdf-schema#label> "Sword"@en .
 # 
 # 
@@ -900,19 +894,37 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/Lotro/lotro
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid2 <http://www.w3.org/2002/07/owl#members> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid8 <http://www.w3.org/2002/07/owl#members> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

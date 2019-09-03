@@ -51,24 +51,18 @@
 
     <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/name">
         <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
-        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide"/>
-        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot"/>
         <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
-        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor"/>
         <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
-        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor"/>
-        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri"/>
-        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar"/>
         <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
         <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted -->
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt -->
 
 
-    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted">
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt">
         <owl:inverseOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy"/>
         <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
         <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
@@ -486,6 +480,9 @@
 
     <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff">
         <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        <rdfs:comment>Usually used by the Maiars accompained by a sword</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"/>
+        <rdfs:label>Staff</rdfs:label>
     </owl:Class>
     
 
@@ -640,7 +637,7 @@
         <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"/>
         <foaf:family_name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name"/>
         <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name"/>
-        <adopted rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <adopt rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
         <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
         <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
         <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
@@ -720,7 +717,6 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien">
         <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow"/>
-        <rdfs:comment>It is a long-range weapon usually, but not exclusively, made of wood that shoots arrows.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1396,7 +1392,6 @@ Mordor was surrounded by three enormous mountain ridges from the North, from the
 
     <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff">
         <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"/>
-        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff"/>
         <rdfs:comment xml:lang="en">A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff"/>
         <rdfs:label xml:lang="en">Staff</rdfs:label>
@@ -1426,7 +1421,6 @@ Mordor was surrounded by three enormous mountain ridges from the North, from the
 
     <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword">
         <rdfs:comment xml:lang="en">In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
         <rdfs:label xml:lang="en">Sword</rdfs:label>
     </rdf:Description>
     
@@ -1441,6 +1435,16 @@ Mordor was surrounded by three enormous mountain ridges from the North, from the
      -->
 
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
