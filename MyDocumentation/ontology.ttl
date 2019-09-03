@@ -27,17 +27,23 @@
 ###  http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:ObjectProperty ;
                                  rdfs:domain :Character ,
+                                             :Fallohide ,
+                                             :Harfoot ,
                                              :Language ,
+                                             :Noldor ,
                                              :Place ,
+                                             :Stoor ,
+                                             :Teleri ,
+                                             :Vanyar ,
                                              :Weapon ;
                                  rdfs:range :Name .
 
 
-###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt
-:adopt rdf:type owl:ObjectProperty ;
-       owl:inverseOf :adoptedBy ;
-       rdfs:domain :Character ;
-       rdfs:range :Character .
+###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopted
+:adopted rdf:type owl:ObjectProperty ;
+         owl:inverseOf :adoptedBy ;
+         rdfs:domain :Character ;
+         rdfs:range :Character .
 
 
 ###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy
@@ -293,10 +299,7 @@ owl:sameAs rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff
 :Staff rdf:type owl:Class ;
-       rdfs:subClassOf :Weapon ;
-       rdfs:comment "Usually used by the Maiars accompained by a sword" ;
-       rdfs:isDefinedBy :Staff ;
-       rdfs:label "Staff" .
+       rdfs:subClassOf :Weapon .
 
 
 ###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor
@@ -399,7 +402,7 @@ owl:sameAs rdf:type owl:DatatypeProperty ;
        <http://purl.org/dc/terms/Location> :The_Shire ;
        <http://xmlns.com/foaf/0.1/family_name> :Baggins_name ;
        <http://xmlns.com/foaf/0.1/name> :Bilbo_name ;
-       :adopt :Frodo ;
+       :adopted :Frodo ;
        :friendOf :Frodo ,
                  :Gandalf ,
                  :Samwise ;
@@ -458,7 +461,8 @@ owl:sameAs rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien
 :Bow_of_Lórien rdf:type owl:NamedIndividual ,
-                        :Bow .
+                        :Bow ;
+               rdfs:comment "It is a long-range weapon usually, but not exclusively, made of wood that shoots arrows." .
 
 
 ###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name
@@ -950,6 +954,7 @@ Mordor was surrounded by three enormous mountain ridges from the North, from the
 ###  https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff
 :Wizard_Staff rdf:type owl:NamedIndividual ,
                        :Staff ;
+              <http://xmlns.com/foaf/0.1/name> :Wizard_Staff ;
               rdfs:comment "A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank."@en ;
               rdfs:isDefinedBy :Wizard_Staff ;
               rdfs:label "Staff"@en .
@@ -967,6 +972,7 @@ Mordor was surrounded by three enormous mountain ridges from the North, from the
 #################################################################
 
 :Sword rdfs:comment "In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them."@en ;
+       rdfs:isDefinedBy :Sword ;
        rdfs:label "Sword"@en .
 
 
@@ -975,47 +981,11 @@ Mordor was surrounded by three enormous mountain ridges from the North, from the
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Axe
-                :Bow
-                :Ring
-                :Staff
-                :Sword
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Character
                 :Language
                 :Name
                 :Place
                 :Weapon
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Dwarf
-                :Elf
-                :Hobbit
-                :Human
-                :Maiar
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Fallohide
-                :Harfoot
-                :Stoor
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Noldor
-                :Teleri
-                :Vanyar
               )
 ] .
 
